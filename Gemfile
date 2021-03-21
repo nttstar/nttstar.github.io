@@ -11,4 +11,5 @@ group :jekyll_plugins do
 end
 
 
+gem "bulma-clean-theme"
 gem "webrick", "~> 1.7"
