@@ -1,0 +1,10 @@
+title: Augmentations
+arrange:
+  - index.md
+  - transforms.md
+  - crops
+  - geometric
+  - domain_adaptation.md
+  - functional.md
+  - bbox_utils.md
+  - keypoints_utils.md

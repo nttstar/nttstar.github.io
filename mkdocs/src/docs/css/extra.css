@@ -1,0 +1,249 @@
+@media screen and (min-width: 76.25em) {
+  .md-content {
+    max-width: 80%;
+  }
+}
+
+.md-typeset a {
+  text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .header-large-menu-item {display: none;}
+}
+
+.header-menu-item {
+  float: left;
+  padding: 0 0.4rem;
+}
+
+.header-menu-item-selected {
+  font-weight: bold;
+  color: #555;
+}
+
+
+img ~ strong {
+  display: block;
+  text-align: center;
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+
+p img {
+  display: block;
+  margin: 0 auto;
+}
+
+.run-in-colab-button a {
+  width: 15rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.view-on-github-button a {
+  width: 15rem;
+  color: #333;
+  text-decoration: none;
+
+}
+
+.md-typeset a.btn {
+  text-decoration: none;
+}
+
+
+.md-typeset .btn {
+  display: inline-block;
+  margin-right: 20px;
+  letter-spacing: 2px;
+  border: 1px solid transparent
+}
+
+.md-typeset .btn-round {
+  border-radius: 4px !important
+}
+
+.md-typeset .md-typeset .btn i {
+  margin-right: 5px
+}
+
+.md-typeset .md-typeset .btn.btn-large i {
+  font-size: 24px
+}
+
+.md-typeset .button {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+.md-typeset .btn.btn-large {
+  font-size: 20px;
+  padding: 18px 25px
+}
+
+.md-typeset .btn.btn-medium {
+  font-size: 14px;
+  padding: 10px 22px
+}
+
+.md-typeset .btn.btn-small {
+  font-size: 11px;
+  padding: 2px 14px;
+  letter-spacing: 1px
+}
+
+.md-typeset .btn.btn-very-small {
+  font-size: 9px;
+  padding: 1px 12px;
+  letter-spacing: 1px
+}
+
+.md-typeset .highlight-button {
+  border: 2px solid #777;
+  display: inline-block;
+  padding: 8px 20px 9px;
+  font-size: 12px;
+  color: #222;
+  background-color: transparent
+}
+
+.md-typeset .highlight-button:hover {
+  background-color: #efefef;
+  border: 2px solid #777;
+  color: #222;
+}
+
+
+.md-typeset .highlight-button:active, .md-typeset .highlight-button:focus {
+  color: #222;
+  border: 2px solid #777;
+  color: #222;
+}
+
+.md-typeset .highlight-button i {
+  color: #000
+}
+
+.md-typeset .highlight-button:hover i {
+  color: #fff
+}
+
+.highlight-button svg{
+  float: left;
+  margin-right: 0.5em;
+}
+
+.colab-button svg {
+  position: relative;
+  top: 8px;
+}
+
+
+.github-button svg {
+  position: relative;
+  top: 2px;
+}
+
+.output_subarea pre {
+  white-space: pre-wrap;
+  word-break: keep-all;
+}
+
+.doc-heading {
+  background: rgba(68,138,255,.1);
+  border-top: .2rem solid #448aff;
+  scroll-margin-top: 2em !important;
+}
+
+.md-typeset__table {
+  min-width: 100%;
+}
+
+.md-typeset table:not([class]) {
+   display: table;
+}
+
+.doc-object {
+  margin-bottom: 3.5rem;
+}
+
+.doc-heading code {
+  font-size: 0.65em;
+}
+
+.doc-github-link {
+  font-size: 0.9rem;
+}
+
+.md-typeset__table code {
+  font-size: 1.1em
+}
+
+.md-typeset__table p {
+  font-size: 1.1em
+}
+
+.md-typeset__table th {
+  font-size: 1.1em
+}
+
+.md-typeset table:not([class]) td {
+  padding: .2rem .8rem;
+  vertical-align: middle;
+}
+
+
+.algolia-autocomplete .ds-dropdown-menu {
+    width: 100%;
+    max-width: 100%;
+    min-width: 300px;
+}
+
+@media (min-width: 576px) {
+  .algolia-autocomplete .ds-dropdown-menu {
+    width: 500px;
+    max-width: 500px;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .algolia-autocomplete .ds-dropdown-menu {
+    width: 500px;
+    max-width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .algolia-autocomplete .ds-dropdown-menu {
+    width: 650px;
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .algolia-autocomplete .ds-dropdown-menu {
+    width: 850px;
+    max-width: 850px;
+  }
+}
+
+
+
+.algolia-autocomplete .algolia-docsearch-suggestion--category-header {
+  font-size: 1.75em
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--subcategory-column {
+  font-size: 1.3em
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--title {
+  font-size: 1.5em
+}
+
+.algolia-autocomplete .algolia-docsearch-suggestion--text {
+  font-size: 1.4em
+}

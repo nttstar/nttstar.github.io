@@ -1,0 +1,9 @@
+title: Getting started with Albumentations
+arrange:
+  - installation.md
+  - image_augmentation.md
+  - mask_augmentation.md
+  - bounding_boxes_augmentation.md
+  - keypoints_augmentation.md
+  - simultaneous_augmentation.md
+  - transforms_and_targets.md
