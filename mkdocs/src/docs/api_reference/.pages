@@ -1,7 +1,0 @@
-title: API Reference
-arrange:
-  - index.md
-  - core
-  - augmentations
-  - imgaug
-  - pytorch

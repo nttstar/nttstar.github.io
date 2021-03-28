@@ -1,6 +1,0 @@
-title: Core API
-arrange:
-  - index.md
-  - composition.md
-  - transforms_interface.md
-  - serialization.md
