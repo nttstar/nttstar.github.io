@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Contact us. Albumentations: Fast and Flexible Image Augmentations | InsightFace: an open source 2D&3D deep face analysis library</title>
+    <title>VPL | InsightFace: an open source 2D&3D deep face analysis library</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="InsightFace">
@@ -79,22 +79,148 @@
 <div style="padding-top: 65px !important;">
 </div>
 
-<div class="container space-top-2 space-bottom-2">
-
-    <div class="text-left mb-4 mt-6">
-        <h1 class="font-weight-medium text-center">Contact us</h1>
+<div class="bg-light">
+    <div class="container space-top-1 space-bottom-1">
+        <div class="text-left mb-2 mt-4">
+            <div class="anchor">
+                <a id="research"> </a>
+                <h1 class="font-weight-medium text-center">Variational Prototype Learning for Deep Face Recognition</h1>
+            </div>
+        </div>
     </div>
-    <div class="pl-lg-4">
-                
-        <p class="mb-0 main-feature-p text-center">
-            E-Mail: <a href = "mailto: contact@insightface.ai">contact@insightface.ai</a>
-        </p>
-        <p class="mb-0 main-feature-p text-center">
-            QQ Group: 711302608 (For Chinese Users)
-        </p>
+</div>
+<div class="container space-top-1 space-bottom-1">
+    <div class="w-md-80 w-lg-50 text-center mx-md-auto mb-4">
+        <h2 class="font-weight-medium">Abstract</h2>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Deep face recognition has achieved remarkable improvements due to the introduction of margin-based softmax loss, 
+            in which the prototype stored in the last linear layer represents the center of each class. 
+            In these methods, training samples are enforced to be close to positive prototypes and far apart from negative 
+            prototypes by a clear margin. However, we argue that prototype learning only employs sample-to-prototype comparisons 
+            without considering sample-to-sample comparisons during training and the low loss value gives us an illusion of perfect 
+            feature embedding, impeding the further exploration of SGD. To this end, we propose Variational Prototype Learning (VPL), 
+            which represents every class as a distribution instead of a point in the latent space. By identifying the slow feature 
+            drift phenomenon, we directly inject memorized features into prototypes to approximate variational prototype sampling. 
+            The proposed VPL can simulate sample-to-sample comparisons within the classification framework, encouraging the SGD solver 
+            to be more exploratory, while boosting performance. Moreover, VPL is conceptually simple, easy to implement, 
+            computationally efficient and memory saving. We present extensive experimental results on popular benchmarks, 
+            which demonstrate the superiority of the proposed VPL method over the state-of-the-art competitors. 
+        </div>
+    </div>
+</div>
+<!-- <div class="container space-top-1 space-top-sm-2 space-bottom-1 space-bottom-sm-1">
+    <div class="row">
+        <div class="col-12">
+            <hr>
+        </div>
+    </div>
+</div> -->
+
+<!-- <div class="bg-light">
+    <div class="container space-top-1 space-bottom-1">
+        <div class="text-left mb-2 mt-4">
+            <div class="anchor">
+                <h1 class="font-weight-medium text-center">Overview Video</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container space-top-1 space-bottom-1">
+    <div class="row">
+        <div class="col-12 mt-2 text-center">
+            Youtube:
+        </div>
+    </div>
+    <div class="text-center mx-md-auto mb-4">
+        <iframe width="1200" height="675" src="https://www.youtube.com/embed/y-D1tReryGA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2 text-center">
+            Bilibili:
+        </div>
+        
+    </div>
+    <div class="row">
+        <div class="text-center mx-md-auto mb-4">
+            <iframe width="1200" height="675" src="//player.bilibili.com/player.html?aid=38041494&bvid=BV1Yt411v7j2&cid=66875340&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+        </div>
+    </div>
+</div> -->
+<!-- <div class="container space-top-1 space-top-sm-2 space-bottom-1 space-bottom-sm-1">
+    <div class="row">
+        <div class="col-12">
+            <hr>
+        </div>
+    </div>
+</div> -->
+<div class="bg-light">
+    <div class="container space-top-1 space-bottom-1">
+        <div class="text-left mb-2 mt-4">
+            <div class="anchor">
+                <h1 class="font-weight-medium text-center">Paper</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container space-top-1 space-bottom-1">
+
+    <div class="row">
+        <div class="col-12 mt-2">
+            Link to <a href="https://arxiv.org/abs/1801.07698" target="_blank"
+            class="border-link">ArcFace: Additive Angular Margin Loss for Deep Face Recognition</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Citation:
+            <pre style="background-color: #eee; border: 1px solid #777; padding: 10px"
+                 class="mt-2"><code>@inproceedings{deng2019arcface,
+    title={Arcface: Additive angular margin loss for deep face recognition},
+    author={Deng, Jiankang and Guo, Jia and Xue, Niannan and Zafeiriou, Stefanos},
+    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+    pages={4690--4699},
+    year={2019}
+    }</code></pre>
+        </div>
     </div>
     
 </div>
+<div class="bg-light">
+    <div class="container space-top-1 space-bottom-1">
+        <div class="text-left mb-2 mt-4">
+            <div class="anchor">
+                <h1 class="font-weight-medium text-center">Github Implementation</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- <div class="container space-top-1 space-top-sm-2 space-bottom-1 space-bottom-sm-1">
+    <div class="row">
+        <div class="col-12">
+            <hr>
+        </div>
+    </div>
+</div> -->
+<div class="container space-top-1 space-bottom-1">
+
+    <div class="row">
+        <div class="col-12 mt-2 text-center">
+            <a href="https://github.com/deepinsight/insightface/tree/master/recognition/vpl" target="_blank"
+            class="border-link">Original MXNet implementation on InsightFace</a>
+
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            
+        </div>
+    </div>
+</div>
+
+
 
 <footer class="border-top">
     <div class="container space-1">
