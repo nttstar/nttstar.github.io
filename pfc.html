@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>RetinaFace | InsightFace: an open source 2D&3D deep face analysis library</title>
+    <title>Partial FC | InsightFace: an open source 2D&3D deep face analysis library</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="InsightFace">
@@ -84,7 +84,7 @@
         <div class="text-left mb-2 mt-4">
             <div class="anchor">
                 <a id="research"> </a>
-                <h1 class="font-weight-medium text-center">Retinaface: Single-shot multi-level face localisation in the wild</h1>
+                <h1 class="font-weight-medium text-center">Partial FC: Training 10 Million Identities on a Single Machine</h1>
             </div>
         </div>
     </div>
@@ -95,17 +95,17 @@
     </div>
     <div class="row">
         <div class="col-12 mt-2">
-            Though tremendous strides have been made in uncontrolled face detection, accurate and efficient 2D face alignment and 3D face reconstruction in-the-wild remain an
-open challenge. In this paper, we present a novel singleshot, multi-level face localisation method, named RetinaFace, which unifies face box prediction, 2D facial landmark localisation and 3D vertices regression under one
-common target: point regression on the image plane. To
-fill the data gap, we manually annotated five facial landmarks on the WIDER FACE dataset and employed a semiautomatic annotation pipeline to generate 3D vertices for
-face images from the WIDER FACE, AFLW and FDDB
-datasets. Based on extra annotations, we propose a mutually beneficial regression target for 3D face reconstruction, that is predicting 3D vertices projected on the image
-plane constrained by a common 3D topology. The proposed
-3D face reconstruction branch can be easily incorporated,
-without any optimisation difficulty, in parallel with the existing box and 2D landmark regression branches during joint
-training. Extensive experimental results show that RetinaFace can simultaneously achieve stable face detection,
-accurate 2D face alignment and robust 3D face reconstruction while being efficient through single-shot inference.
+            Face recognition has been an active and vital topic among computer vision community for a long time. 
+            Previous researches mainly focus on loss functions used for facial feature extraction network, 
+            among which the improvements of softmax-based loss functions greatly promote the performance of face recognition. 
+            However, the contradiction between the drastically increasing number of face identities and the shortage of GPU memories 
+            is gradually becoming irreconcilable. In this paper, we thoroughly analyze the optimization goal of softmax-based loss functions 
+            and the difficulty of training massive identities. We find that the importance of negative classes in softmax function in face 
+            representation learning is not as high as we previously thought. The experiment demonstrates no loss of accuracy when training 
+            with only 10\% randomly sampled classes for the softmax-based loss functions, compared with training with full classes using 
+            state-of-the-art models on mainstream benchmarks. We also implement a very efficient distributed sampling algorithm, 
+            taking into account model accuracy and training efficiency, which uses only eight NVIDIA RTX2080Ti 
+            to complete classification tasks with tens of millions of identities.
         </div>
     </div>
 </div>
@@ -117,7 +117,7 @@ accurate 2D face alignment and robust 3D face reconstruction while being efficie
     </div>
 </div> -->
 
-<div class="bg-light">
+<!-- <div class="bg-light">
     <div class="container space-top-1 space-bottom-1">
         <div class="text-left mb-2 mt-4">
             <div class="anchor">
@@ -146,7 +146,7 @@ accurate 2D face alignment and robust 3D face reconstruction while being efficie
             <iframe width="1200" height="675" src="//player.bilibili.com/player.html?aid=38041494&bvid=BV1Yt411v7j2&cid=66875340&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
         </div>
     </div>
-</div>
+</div> -->
 <!-- <div class="container space-top-1 space-top-sm-2 space-bottom-1 space-bottom-sm-1">
     <div class="row">
         <div class="col-12">
@@ -167,19 +167,18 @@ accurate 2D face alignment and robust 3D face reconstruction while being efficie
 
     <div class="row">
         <div class="col-12 mt-2">
-            Link to <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Deng_RetinaFace_Single-Shot_Multi-Level_Face_Localisation_in_the_Wild_CVPR_2020_paper.pdf" target="_blank"
-            class="border-link">Retinaface: Single-shot multi-level face localisation in the wild</a>
+            Link to <a href="https://arxiv.org/abs/2010.05222" target="_blank"
+            class="border-link">Partial FC: Training 10 Million Identities on a Single Machine</a>
         </div>
     </div>
     <div class="row">
         <div class="col-12 mt-2">
             Citation:
             <pre style="background-color: #eee; border: 1px solid #777; padding: 10px"
-                 class="mt-2"><code>@inproceedings{deng2020retinaface,
-                    title={Retinaface: Single-shot multi-level face localisation in the wild},
-                    author={Deng, Jiankang and Guo, Jia and Ververas, Evangelos and Kotsia, Irene and Zafeiriou, Stefanos},
-                    booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
-                    pages={5203--5212},
+                 class="mt-2"><code>@article{an2020partial,
+                    title={Partial FC: Training 10 Million Identities on a Single Machine},
+                    author={An, Xiang and Zhu, Xuhan and Xiao, Yang and Wu, Lan and Zhang, Ming and Gao, Yuan and Qin, Bin and Zhang, Debing and Fu, Ying},
+                    journal={arXiv preprint arXiv:2010.05222},
                     year={2020}
                   }</code></pre>
         </div>
@@ -206,11 +205,10 @@ accurate 2D face alignment and robust 3D face reconstruction while being efficie
 
     <div class="row">
         <div class="col-12 mt-2 text-center">
-            <a href="https://github.com/deepinsight/insightface/tree/master/detection/RetinaFace" target="_blank"
-            class="border-link">Original MXNet implementation on InsightFace</a>
+            <a href="https://github.com/deepinsight/insightface/tree/master/recognition/partial_fc" target="_blank"
+            class="border-link">Official MXNet implementation on InsightFace</a>
 
         </div>
-
     </div>
     <div class="row">
         <div class="col-12 mt-2">
