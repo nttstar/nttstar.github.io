@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FAS23 | InsightFace: an open source 2D&3D deep face analysis library</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta property="og:title" content="InsightFace">
+    <meta property="og:description" content="InsightFace: an open source 2D&3D deep face analysis library">
+    <!-- <meta property="og:image" content="https://insightface.ai/assets/img/custom/albumentations_card.png"> -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <link rel="shortcut icon" href="./assets/img/custom/github_large.png">
+    <link href="//fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158065353-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-158065353-1');
+    </script>
+</head>
+<body>
+<header id="header" class="u-header u-header--sticky-top"
+        data-header-fix-moment="500"
+        data-header-fix-effect="slide">
+    <div class="u-header__section">
+        <div id="logoAndNav" class="container">
+            <nav class="navbar navbar-expand-md u-header__navbar u-header__navbar--no-space">
+                <a class="navbar-brand u-header__navbar-brand" href="https://insightface.ai/" aria-label="Albumentations">
+                    <!-- <img class="u-header__navbar-brand-default" src="./assets/img/custom/albumentations_logo.png" alt="Albumentations logo" style="width: 3.375rem"> -->
+                    <span style="color: #335de6; font-weight: bold; position: absolute; top: 1.3rem; left: 0rem; font-size: 22px;">InsightFace</span>
+                </a>
+                <button type="button" class="navbar-toggler btn u-hamburger"
+                        aria-label="Toggle navigation"
+                        aria-expanded="false"
+                        aria-controls="navBar"
+                        data-toggle="collapse"
+                        data-target="#navBar">
+          <span id="hamburgerTrigger" class="u-hamburger__box">
+            <span class="u-hamburger__inner"></span>
+          </span>
+                </button>
+                <div id="navBar" class="collapse navbar-collapse u-header__navbar-collapse">
+                    <ul class="navbar-nav align-items-md-center u-header__navbar-nav">
+                        <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://insightface.ai/">Home</a>
+                        </li>
+                        <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://insightface.ai/demos">Web Demos</a>
+                        </li>
+                        <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://insightface.ai/projects">Projects</a>
+                        </li>
+                        <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://insightface.ai/challenges">Challenges</a>
+                        </li>
+                        <!-- <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://insightface.ai/docs">PyDocs</a>
+                        </li> -->
+                        <!-- <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://insightface.ai/whos_using">Who's using</a>
+                        </li>
+                        <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://albumentations-demo.herokuapp.com/" target="_blank">Demo</a>
+                        </li> -->
+                        
+                        <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://insightface.ai/team">Team</a>
+                        </li>
+                        <li class="nav-item u-header__nav-item">
+                            <a class="nav-link u-header__nav-link" href="https://insightface.ai/collector">Collector</a>
+                        </li>
+                        <li class="nav-item u-header__nav-last-item">
+                            <a class="btn btn-outline-primary mb-2 mb-sm-0 btn-sm" href="https://github.com/deepinsight/insightface" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+<div style="padding-top: 65px !important;">
+</div>
+
+<div class="bg-light">
+    <div class="container space-top-1 space-bottom-1">
+        <div class="text-left mb-2 mt-4">
+            <div class="anchor">
+                <a id="research"> </a>
+                <h1 class="font-weight-medium text-center">4th Face Anti-spoofing Workshop and Challenge, Wild Track</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container space-top-1 space-bottom-1">
+    <div class="mx-md-auto mb-4">
+        <h2 class="font-weight-medium">Abstract</h2>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            We host the WILD track of Face Anti-spoofing Workshop and Challenge@CVPR2023 here. 
+            The challenge will officially start together with <a href="https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengecvpr2023" target="_blank"
+            class="border-link">4th Face Anti-spoofing Workshop</a>
+
+            
+        </div>
+    </div>
+</div>
+<div class="container space-top-1 space-bottom-1">
+    <div class="mx-md-auto mb-4">
+        <h2 class="font-weight-medium">Links</h2>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Workshop Homepage: <a href="https://sites.google.com/view/face-anti-spoofing-challenge/welcome/challengecvpr2023" target="_blank"
+            class="border-link">4th Face Anti-spoofing Workshop</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Github Homepage including submission rules: <a href="https://github.com/deepinsight/insightface/tree/master/challenges/cvpr23-fas-wild" target="_blank"
+            class="border-link">cvpr23-fas-wild</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Submission site: <a href="https://codalab.lisn.upsaclay.fr/competitions/10670" target="_blank"
+            class="border-link">codalab</a>
+        </div>
+    </div>
+    
+</div>
+<!-- <div class="container space-top-1 space-top-sm-2 space-bottom-1 space-bottom-sm-1">
+    <div class="row">
+        <div class="col-12">
+            <hr>
+        </div>
+    </div>
+</div> -->
+<!-- <div class="container space-top-1 space-bottom-1">
+    <div class="mx-md-auto mb-4">
+        <h2 class="font-weight-medium">Workshop Agenda</h2>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Monday, October 11, 2021, 7:00 AM - 6:00 PM (eastern time zone)
+        </div>
+    </div>
+    
+</div>
+<div class="container space-top-1 space-bottom-1">
+    <div class="mx-md-auto mb-4">
+        <h2 class="font-weight-medium">Invited Talks </h2>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Patrick Grother: Deep Insight on Face Recognition Vendor Test
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Xiaoming Liu: Trustworthy Face Recognition
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Rama Chellappa: Fair Face Recognition
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Jianshu Li: Face Recognition Under Financial Scenarios
+        </div>
+    </div>
+</div> -->
+
+<div class="bg-light">
+    <div class="container space-top-1 space-bottom-1">
+        <div class="text-left mb-2 mt-3">
+            <div class="anchor">
+                <h1 class="font-weight-medium text-center">Leaderboards</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container space-top-1 space-bottom-1">
+    
+    <div class="container space-top-1 space-bottom-1">
+    <div class="mx-md-auto mb-4">
+        <h2 class="font-weight-medium">Top-3 Winners</h2>
+    </div>
+
+</div>
+<div class="col-12 mb-4">
+    <div class="row"
+         style="border: 1px solid #e7eaf3; border-radius: 0.3125rem; padding: 10px">
+        <div class="col-12 col-sm-8">
+            <h4 class="font-weight-medium">China Telecom Corporation Ltd. Data&AI Technology Company</h5>
+            <ul class="list-inline font-size-1 text-muted mt-2">
+                
+                <li class="list-inline-item">Yaowen Xu
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Zhaofan Zou
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Zhuming Wang
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Bowen Zhang
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Lifang Wu
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Zhizhi Guo
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Zhixiang He
+                </li>
+                
+                
+            </ul>
+
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="alert alert-warning text-center">
+                1st place
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<div class="col-12 mb-4">
+    <div class="row"
+         style="border: 1px solid #e7eaf3; border-radius: 0.3125rem; padding: 10px">
+        <div class="col-12 col-sm-8">
+            <h4 class="font-weight-medium">MeiTuan</h5>
+            <ul class="list-inline font-size-1 text-muted mt-2">
+                
+                <li class="list-inline-item">Dashuang Liang
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Xianhua He
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Song Yang
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Zhanlong Hao
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Hui Ma
+                </li>
+                
+                
+            </ul>
+
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="alert alert-warning text-center">
+                2nd place
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+<div class="col-12 mb-4">
+    <div class="row"
+         style="border: 1px solid #e7eaf3; border-radius: 0.3125rem; padding: 10px">
+        <div class="col-12 col-sm-8">
+            <h4 class="font-weight-medium">OPDAI</h5>
+            <ul class="list-inline font-size-1 text-muted mt-2">
+                
+                <li class="list-inline-item">Heng Cong
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Ronyu Zhang
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Yusheng Zhang
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Lingzhi Fu
+                </li>
+                
+                <li class="list-inline-item text-muted">•</li>
+                
+                
+                <li class="list-inline-item">Hao Wang
+                </li>
+                
+                
+            </ul>
+
+        </div>
+        <div class="col-12 col-sm-4">
+            <div class="alert alert-warning text-center">
+                3rd place
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+    
+    
+</div>
+<!-- <div class="container space-top-1 space-top-sm-2 space-bottom-1 space-bottom-sm-1">
+    <div class="row">
+        <div class="col-12">
+            <hr>
+        </div>
+    </div>
+</div> -->
+<div class="bg-light">
+    <div class="container space-top-1 space-bottom-1">
+        <div class="text-left mb-2 mt-3">
+            <div class="anchor">
+                <h1 class="font-weight-medium text-center">Paper</h1>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container space-top-1 space-bottom-1">
+
+    <div class="row">
+        <div class="col-12 mt-2">
+            Link to <a href="https://arxiv.org/abs/2304.05753" target="_blank"
+            class="border-link">Wild Face Anti-Spoofing Challenge 2023: Benchmark and Results</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mt-2">
+            Citation:
+            <pre style="background-color: #eee; border: 1px solid #777; padding: 10px"
+                 class="mt-2"><code>@misc{wang2023wild,
+                    title={Wild Face Anti-Spoofing Challenge 2023: Benchmark and Results}, 
+                    author={Dong Wang and Jia Guo and Qiqi Shao and Haochi He and Zhian Chen and Chuanbao Xiao and Ajian Liu and Sergio Escalera and Hugo Jair Escalante and Lei Zhen and Jun Wan and Jiankang Deng},
+                    year={2023},
+                    eprint={2304.05753},
+                    archivePrefix={arXiv},
+                    primaryClass={cs.CV}
+              }</code></pre>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+<footer class="border-top">
+    <div class="container space-1">
+        <div class="row justify-content-sm-between">
+            <div class="col-12 col-sm-9 col-xl-10 mb-4 pt-3">
+                <ul class="list-inline list-group-flush list-group-borderless">
+                    <li class="list-inline-item pl-3">
+                        <a class="list-group-item-action" href="https://insightface.ai/">Home</a>
+                    </li>
+                    <li class="list-inline-item pl-3">
+                        <a class="list-group-item-action" href="https://insightface.ai/team">Team</a>
+                    </li>
+                    <li class="list-inline-item pl-3">
+                        <a class="list-group-item-action" href="https://github.com/deepinsight/insightface" target="_blank">GitHub</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-sm-3 col-xl-2 text-sm-right mb-4 mb-sm-0">
+                <a type="button" class="btn btn-soft-primary" href="https://insightface.ai/contact_us">Contact us</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+<script src="./assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+<script src="./assets/vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="./assets/vendor/bootstrap/bootstrap.min.js"></script>
+<script src="./assets/js/hs.core.js"></script>
+<script src="./assets/js/components/hs.unfold.js"></script>
+<script>
+    $(document).on('ready', function () {
+        $('.collapse-button').click(function () {
+            var that = $(this)
+            var length = that.data('length')
+            var state = that.data('state')
+            if (state === 'hidden') {
+                that.data('state', 'shown')
+                that.html('Hide ' + length + ' more <i class="fa fa-angle-up"></i>')
+            } else {
+                that.data('state', 'hidden')
+                that.html('Show ' + length + ' more <i class="fa fa-angle-down"></i>')
+            }
+        });
+    });
+    $(window).on('load', function () {
+        // initialization of HSScrollNav component
+        $.HSCore.components.HSUnfold.init($('[data-unfold-target]'));
+    });
+</script>
+ 
+</body>
+</html>
